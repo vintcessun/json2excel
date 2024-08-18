@@ -1,0 +1,14 @@
+[package]
+name = "json2excel"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "一个把json先齐次化后转为xlsx的库"
+
+[dependencies]
+anyhow = "1.0.86"
+indexmap = {version = "2.4.0", features = ["serde"]}
+indextree = { version = "4.7.2", features = ["serde"] }
+rust_xlsxwriter = { version = "0.73.0", features = ["serde"] }
+serde = "1.0.208"
+serde_json = {version = "1.0.125", features = ["indexmap"]}
