@@ -49,7 +49,7 @@ pub fn array(sheet: &mut Worksheet, data: Value, tag: &str) -> Result<()> {
                 Some(ret) => ret.to_owned(),
                 None => "".to_string(),
             };
-            sheet.write(i as u32, pos, data)?;
+            sheet.write((i + 1) as u32, pos, data)?;
         }
     }
     Ok(())
